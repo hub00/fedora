@@ -5,6 +5,8 @@ RUN curl -o /etc/yum.repos.d/fedora.repo http://mirrors.aliyun.com/repo/fedora.r
   dnf install gcc-c++ -y &&\
   dnf install golang -y &&\
   dnf install cmake -y &&\
-  dnf install git -y 
+  dnf install git -y &&\
+  echo "export GOPATH=/root/go" >> /root/.bashrc &&\
+  echo 'export PATH=${PATH}:${GOPATH}/bin' >> /root/.bashrc
   
   
