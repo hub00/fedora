@@ -1,4 +1,4 @@
-FROM fedora:27
+FROM fedora:28
 RUN curl -o /etc/yum.repos.d/fedora.repo http://mirrors.aliyun.com/repo/fedora.repo &&\
   curl -o /etc/yum.repos.d/fedora-updates.repo http://mirrors.aliyun.com/repo/fedora-updates.repo &&\
   dnf makecache &&\
@@ -10,5 +10,3 @@ RUN curl -o /etc/yum.repos.d/fedora.repo http://mirrors.aliyun.com/repo/fedora.r
   mkdir /root/cpp &&\
   echo "export GOPATH=/root/go" >> /root/.bashrc &&\
   echo 'export PATH=${PATH}:${GOPATH}/bin' >> /root/.bashrc
-  
-  
