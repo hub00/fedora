@@ -1,9 +1,8 @@
-# Docker Boxs  
+# Fedora Container for Development
 
-## Contents  
-+ [x] fedora27: a custom fedora container with  
-  - gcc-c++  
-  - git  
-  - golang    
-  - make  
-  - cmake  
+This is a custom fedora container with  
+- gcc-c++  
+- git  
+- golang    
+- make  
+- cmake  
